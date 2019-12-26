@@ -32,12 +32,12 @@ model.fit(X_train, y_train)
 ######################
 
 # hasil prediksi
-hasil_prediksi_svm = model.predict(X_test)
-print(hasil_prediksi_svm)
+hasil_prediksi = model.predict(X_test)
+print(hasil_prediksi)
 
 # confusion matrix
-cm = confusion_matrix(y_test, hasil_prediksi_svm)
+cm = confusion_matrix(y_test, hasil_prediksi)
 print(cm)
 
 # classification report (precision,recall,F1-score,accuracy,macro avg,dan weighted avg)
-print(classification_report(y_test, hasil_prediksi_svm))
+print(classification_report(y_test, hasil_prediksi))
